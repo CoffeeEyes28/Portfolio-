@@ -1,0 +1,149 @@
+:root {
+  --main: #262626;
+  --secondary: #5f222b;
+  --third: #0d0d0d;
+  --white: #ffffff;
+}
+
+body {
+  background-color: var(--main);
+  font-family: Fanwood, serif;
+  color: var(--white);
+}
+
+.headerflex{
+  display: flex 1 0 100%;
+  flex-flow: row wrap;
+}
+
+header {
+  padding: 2px;
+  background-color: var(--secondary);
+  color: var(--white);
+}
+
+header h1 {
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 52px;
+}
+
+
+
+nav {
+  padding-top: -120px;
+  margin-right: 20px;
+  float: right;
+  font-size: 30px;
+
+}
+
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#imgwrapper{
+  display: flexbox;
+ flex-flow: column wrap;
+}
+
+#personalphoto {
+  
+  width: 514px;
+  height: 514px;
+}
+
+#musicphoto{
+ 
+  width: 514px;
+  height: 600x;
+}
+
+
+
+main section{
+  border: 5px solid;
+  border-color: var(--white);
+}
+
+#aboutwork{
+  
+
+}
+
+
+.about {
+  float: right;
+  text-align: center;
+  background-color: var(--third);
+  width: 1014px;
+}
+
+h2 {
+  font-size: 42px;
+}
+
+
+.work {
+  float: right;
+  background-color: var(--third);
+  width: 1014px;
+}
+
+
+.work h2 {
+  text-align: center;
+}
+
+.work h3 {
+  font-size: 28px;
+  margin-left: 40px;
+}
+
+.webscreenshot {
+  width: 410px;
+  height: 480px;
+}
+
+.boxscreenshot{
+  width: 600px;
+  height:410px;
+}
+
+.contact {
+  text-align: center;
+  background-color: var(--third);
+  width: 514px;
+}
+
+.contact h3 {
+  font-size: 42px;
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact li {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+/* forces footer to bottom and sets style and background color */
+footer {
+  padding: 10px;
+  clear: both;
+  text-align: center;
+  background-color: var(--secondary);
+}
+

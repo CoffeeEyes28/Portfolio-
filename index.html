@@ -1,13 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <!-- Body of page -->
+  <body>
+    <!-- Header Section -->
+    <div class="headerflex">
+    <header>
+      <h1>Gregory Johnston</h1>
+      <!-- Nav bar that links to main sections -->
+      <nav>
+        <ul>
+          <li>
+            <a href="#about">About Me |</a>
+          </li>
+          <li>
+            <a href="#work">My Work |</a>
+          </li>
+          <li>
+            <a href="#contact">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+      
+    </header>
+    </div>
+    <main>
+       <!-- wrapper div for img flex display -->
+       <div id="imgwrapper">
+        <!-- Images are sidebar -->
+        <aside>
+      <!-- Image of Gregory -->
+      <figure>
+        <img id="personalphoto" src="./assets/images/personal photo.jpg" />
+      </figure>
+      <!-- Image of Gregory performing which links to music page -->
+      <figure>
+        <a target="_blank" href="https://crryyrslf.bandcamp.com/">
+          <img id="musicphoto" src="./assets/images/albumpromo.png"/>
+          <figcaption> Gregory writes and performs music under the moniker "crry yrslf"</figcaption>
+        </a>
+      </figure>
+      </aside>
+     </div>
+      <!-- flexbox div for about me and work section -->
+      <div id="aboutwork">
+        <!-- About Me section -->
+      <section id="about" class="about">
+        <h2>About Me</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.sey. Lorem ipsum
+          dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+          commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+          velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+          occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+          mollit anim id est laborum.sey.
+        </p>
+      </section>
+      
+      <!-- Work Examples -->
+      
+      <section id="work" class="work">
+        <h2>My Work</h2>
+        <h3>Code Reafactor</h3>
+        <!-- code reafactor screenshot -->
+        <figure>
+          <a
+            target="_blank"
+            href="https://coffeeeyes28.github.io/Code-Refactor-Challenge-/"
+          >
+            <img
+              class="webscreenshot"
+              src="./assets/images/webopage screenshot.png"
+            />
+          </a>
+          
+        </figure>
+        <h3>Watch the Box!</h3>
+        <!-- watch the box screenshot -->
+        <figure>
+          <a target="_blank" href="https://coffeeeyes28.github.io/watch-the-box/">
+            <img class="boxscreenshot"
+            src="./assets/images/boxapp.png"/>
+          </a>
+        </figure>
+      </section>
+      </div>
+      <br>
+      <!-- Contact Me section -->
+      <section id="contact" class="contact">
+        <h3>Contact Me</h3>
+        <ul>
+          <li>
+            <a target="_blank" href="https://github.com/CoffeeEyes28">GitHub</a>
+          </li>
+          <br />
+          <br />
+          <li>
+            <a target="_blank" href="mailto: litm47@gmail.com">Email</a>
+          </li>
+          <br />
+          <br />
+        </ul>
+      </section>
+      
+    </main>
+    <!-- Footer -->
+    <footer>
+      <h4>&copy; 2022 ❤️</h4>
+    </footer>
+  </body>
 </html>
