@@ -21,6 +21,7 @@ header {
   padding: 2px;
   background-color: var(--secondary);
   color: var(--white);
+  
 }
 
 header h1 {
@@ -56,29 +57,30 @@ a {
 
 .row{
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  flex-flow: row wrap;
   padding: 15px;
+  
 }
 
 .column{
   flex: 1;
+flex-flow: column wrap;
 
 }
 
 
 
 #personalphoto {
-  
-  width: 514px;
-  height: 514px;
+  margin-left: -32px;
+  width: 614px;
+  height: 614px;
 }
 
 #musicphoto{
- 
-  width: 514px;
-  height: 600x;
-}
+  margin-left: -32px;
+  width: 614px;
+  height: 500px;
+} 
 
 
 
@@ -87,43 +89,23 @@ main section{
   border-color: var(--white);
 }
 
-.contact {
-  margin-left: 32px;
-  text-align: center;
-  background-color: var(--third);
-  width: 514px;
-}
-
-
-
-.contact ul {
-  list-style-type: none;
-}
-
-.contact li {
-  font-size: 30px;
-  text-decoration: underline;
-}
-
-
-
-
-
 
 .about {
+  margin-left: -32px;
   text-align: center;
   background-color: var(--third);
-  width: 1214px;
+  width: 100%;
 }
 
 h2 {
   font-size: 42px;
 }
 
-
+ 
 .work {
+  margin-left: -32px;
   background-color: var(--third);
-  width: 1214px;
+  width: 100%;
 }
 
 
@@ -134,35 +116,138 @@ h2 {
 .work h3 {
   font-size: 28px;
   margin-left: 40px;
+  
 }
 
 .imgrow{
   display: flex;
+  
 }
 
 .imgcolumn{
-  flex: 1;
-  
-  
+  flex: 1;  
 }
+
 .webscreenshot {
-  width: 410px;
-  height: 480px;
+  width: 510px;
+  height: 580px;
 }
 
 
 
 .boxscreenshot{
   width: 600px;
-  height:410px;
+  height: 410px;
 }
 
+.wip{
+  width: 250px;
+  height: 250px;
+}
+.contact {
+  text-align: center;
+  background-color: var(--third);
+  width:100%
+}
+
+.contact h3{
+  font-size: 42px;
+  
+}
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact li {
+  font-size: 30px;
+  display: inline;
+  
+}
 
 /* forces footer to bottom and sets style and background color */
 footer {
-  padding: 10px;
+  padding: 2px;
   clear: both;
   text-align: center;
   background-color: var(--secondary);
+  width: 100%;
 }
 
+footer h4{
+  font-size: 18px;
+}
+
+@media screen and (max-width:1983px){
+  .column{
+    display: flex; 
+    width: 100%;
+  }
+ 
+  .imgrow,
+  .imgcolumn
+  h3{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .webscreenshot,
+  .boxscreenshot,
+  .wip{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+  .webscreenshot{
+  object-fit: contain;
+    min-width: 300px;
+  }
+  .boxscreenshot{
+    min-width: 250px;
+  }
+
+  .wip{
+    max-width: 200px;
+  }
+}
+
+
+
+@media screen and (max-width:1572px){
+
+  .about,
+  .work{
+    margin: 0;
+  }
+
+}
+
+
+
+
+@media screen and (max-width:358px){
+
+
+  .webscreenshot,
+  .boxscreenshot,
+  .wip{
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+  }
+ 
+  .webscreenshot{
+    object-fit: contain;
+      min-width: 200px;
+    }
+   
+    .boxscreenshot{
+      min-width: 100px;
+    }
+
+    .wip{
+      max-width: 100px;
+    }
+}
