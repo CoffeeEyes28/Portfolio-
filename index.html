@@ -9,12 +9,16 @@
   </head>
   <!-- Body of page -->
   <body>
-    <!-- Header Section -->
+
     <div class="headerflex">
+    <!-- Header Section -->
+    
     <header>
       <h1>Gregory Johnston</h1>
       <!-- Nav bar that links to main sections -->
+      
       <nav>
+        
         <ul>
           <li>
             <a href="#about">About Me |</a>
@@ -26,15 +30,18 @@
             <a href="#contact">Contact Me</a>
           </li>
         </ul>
+      
       </nav>
       
-    </header>
+   </header>
     </div>
+    
     <main>
-       <!-- wrapper div for img flex display -->
-       <div id="imgwrapper">
-        <!-- Images are sidebar -->
-        <aside>
+        <!-- creates a row for img about and work section -->
+       <div class="row">
+        <!-- both imgs into one column -->
+        <div class="column">
+        
       <!-- Image of Gregory -->
       <figure>
         <img id="personalphoto" src="./assets/images/personal photo.jpg" />
@@ -46,12 +53,29 @@
           <figcaption> Gregory writes and performs music under the moniker "crry yrslf"</figcaption>
         </a>
       </figure>
-      </aside>
-     </div>
-      <!-- flexbox div for about me and work section -->
-      <div id="aboutwork">
+        <!-- Contact Me section -->
+        <section id="contact" class="contact">
+          <h2>Contact Me</h2>
+          <ul>
+            <li>
+              <a target="_blank" href="https://github.com/CoffeeEyes28">GitHub</a>
+            </li>
+            <br />
+            <br />
+            <li>
+              <a target="_blank" href="mailto: litm47@gmail.com">Email</a>
+            </li>
+            <br />
+            <br />
+          </ul>
+  
+        </section>
+      <br/>
+      </div>
+      <!-- column for about me and work section -->
+     <div class="column">
         <!-- About Me section -->
-      <section id="about" class="about">
+       <section id="about" class="about">
         <h2>About Me</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -69,12 +93,17 @@
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.sey.
         </p>
-      </section>
+       </section>
+     
+       <!-- Work Examples -->
+       <br/>
       
-      <!-- Work Examples -->
-      
-      <section id="work" class="work">
+       <section id="work" class="work">
         <h2>My Work</h2>
+        <!-- creates a row for both images inside my work section -->
+        <div class="imgrow">
+          <!-- floats the img left to form coloumn -->
+          <div class="imgcolumn">
         <h3>Code Reafactor</h3>
         <!-- code reafactor screenshot -->
         <figure>
@@ -89,6 +118,10 @@
           </a>
           
         </figure>
+        </div>
+        
+        <!-- floats the img left to form coloumn -->
+        <div class="imgcolumn">
         <h3>Watch the Box!</h3>
         <!-- watch the box screenshot -->
         <figure>
@@ -96,27 +129,29 @@
             <img class="boxscreenshot"
             src="./assets/images/boxapp.png"/>
           </a>
+        </div>
         </figure>
-      </section>
+        </div>
+        <div class="imgrow">
+          <div class="imgcolumn">
+          <figure>
+            <h3>Coming Soon</h3>
+            <img src="./assets/images/work-in.png"/>
+          </figure>
+        </div>
+        <div class="imgcolumn">
+          <figure>
+            <h3>Coming Soon</h3>
+            <img src="assets/images/work-in.png" />
+          </figure>
+        </div>
+
+        </div>
       </div>
-      <br>
-      <!-- Contact Me section -->
-      <section id="contact" class="contact">
-        <h3>Contact Me</h3>
-        <ul>
-          <li>
-            <a target="_blank" href="https://github.com/CoffeeEyes28">GitHub</a>
-          </li>
-          <br />
-          <br />
-          <li>
-            <a target="_blank" href="mailto: litm47@gmail.com">Email</a>
-          </li>
-          <br />
-          <br />
-        </ul>
       </section>
-      
+    </div>
+      <br>
+     
     </main>
     <!-- Footer -->
     <footer>

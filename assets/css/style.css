@@ -12,8 +12,9 @@ body {
 }
 
 .headerflex{
-  display: flex 1 0 100%;
-  flex-flow: row wrap;
+  display: flex;
+  flex-flow: column wrap;
+  
 }
 
 header {
@@ -27,6 +28,7 @@ header h1 {
   display: inline-block;
   font-size: 52px;
 }
+
 
 
 
@@ -52,10 +54,19 @@ a {
   text-decoration: none;
 }
 
-#imgwrapper{
-  display: flexbox;
- flex-flow: column wrap;
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 15px;
 }
+
+.column{
+  flex: 1;
+
+}
+
+
 
 #personalphoto {
   
@@ -76,17 +87,33 @@ main section{
   border-color: var(--white);
 }
 
-#aboutwork{
-  
-
+.contact {
+  margin-left: 32px;
+  text-align: center;
+  background-color: var(--third);
+  width: 514px;
 }
 
 
+
+.contact ul {
+  list-style-type: none;
+}
+
+.contact li {
+  font-size: 30px;
+  text-decoration: underline;
+}
+
+
+
+
+
+
 .about {
-  float: right;
   text-align: center;
   background-color: var(--third);
-  width: 1014px;
+  width: 1214px;
 }
 
 h2 {
@@ -95,9 +122,8 @@ h2 {
 
 
 .work {
-  float: right;
   background-color: var(--third);
-  width: 1014px;
+  width: 1214px;
 }
 
 
@@ -110,34 +136,27 @@ h2 {
   margin-left: 40px;
 }
 
+.imgrow{
+  display: flex;
+}
+
+.imgcolumn{
+  flex: 1;
+  
+  
+}
 .webscreenshot {
   width: 410px;
   height: 480px;
 }
+
+
 
 .boxscreenshot{
   width: 600px;
   height:410px;
 }
 
-.contact {
-  text-align: center;
-  background-color: var(--third);
-  width: 514px;
-}
-
-.contact h3 {
-  font-size: 42px;
-}
-
-.contact ul {
-  list-style-type: none;
-}
-
-.contact li {
-  font-size: 30px;
-  text-decoration: underline;
-}
 
 /* forces footer to bottom and sets style and background color */
 footer {
