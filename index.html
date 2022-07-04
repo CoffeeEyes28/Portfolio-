@@ -8,17 +8,16 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <!-- Body of page -->
-  <body>
-
-    <div class="headerflex">
-    <!-- Header Section -->
+<body>
     
+  <div class="headerflex">
+
+
+    <!-- Header Section -->
     <header>
       <h1>Gregory Johnston</h1>
       <!-- Nav bar that links to main sections -->
-      
       <nav>
-        
         <ul>
           <li>
             <a href="#about">About Me |</a>
@@ -30,45 +29,44 @@
             <a href="#contact">Contact Me</a>
           </li>
         </ul>
-      
-      </nav>
-      
-   </header>
-    </div>
-    
-    <main>
-        <!-- creates a row for img about and work section -->
-       <div class="row">
-        <!-- both imgs into one column -->
-        <div class="column">
-        
-      <!-- Image of Gregory -->
-      <figure>
-        <img id="personalphoto"   src="./assets/images/personal photo.jpg" />
-      </figure>
-      <br/>
-      <br/>
-      <br/>
-      <br/>
-      <!-- Image of Gregory performing which links to music page -->
-      <figure>
+      </nav>   
+    </header>
+  </div>
+    <!-- Main Section of page -->
+  <main>
+        <!-- Row = Images, About Me and My Work  -->
+     <div class="row">
+        <!-- Img Column -->
+       <div class="column">
+         <!-- Image of Gregory -->
+         <figure>
+        <img id="personalphoto"   src="./assets/images/personal photo.jpg" alt="Gregory wearing a backwards hat and flanel posing in front of blured lights" />
+         </figure>
+
+         <br/>
+         <br/>
+         <br/>
+         <br/>
+
+         <!-- Image of Gregory performing which links to music page -->
+         <figure>
         <a target="_blank" href="https://crryyrslf.bandcamp.com/">
-          <img id="musicphoto" src="./assets/images/albumpromo.png"/>
+          <img id="musicphoto" src="./assets/images/albumpromo.png" alt="Gregory playing an acoustic guitar and singing agressivly" />
           <figcaption> Gregory writes and performs music under the moniker "crry yrslf"</figcaption>
         </a>
-      </figure>
+         </figure>
         
-      <br/>
-      </div>
-      <!-- column for about me and work section -->
+         <br/>
+
+        </div>
+
+      <!-- About Me and My Work Column -->
       <div class="column">
-        <!-- About Me section -->
-        <!-- about section flexbox -->
-        
-       <section id="about" class="about">
-        
-        <h2>About Me</h2>
-        <p>
+
+         <!-- About Me section -->  
+        <section id="about" class="about">
+         <h2>About Me</h2>
+         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -83,47 +81,45 @@
           velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
           occaecat cupidatat non proident, sunt in culpa qui officia deserunt
           mollit anim id est laborum.sey.
-        </p>
-      
-       </section>
-      
-       <!-- Work Examples -->
-       <br/>
-       
-       <section id="work" class="work">
-        <h2>My Work</h2>
-        <!-- creates a row for both images inside my work section -->
-        <div class="imgrow">
-          <!-- floats the img left to form coloumn -->
-          <div class="imgcolumn">
-        <h3>Code Reafactor</h3>
-        <!-- code reafactor screenshot -->
-        <figure>
+         </p>      
+        </section>
+
+        <br/>
+
+        <!-- Work Examples -->
+        <section id="work" class="work">
+         <h2>My Work</h2>
+        
+      <div class="imgrow">
+          
+        <div class="imgcolumn">
+         <h3>Code Reafactor</h3>
+         <!-- code reafactor screenshot -->
+         <figure>
           <a
             target="_blank"
             href="https://coffeeeyes28.github.io/Code-Refactor-Challenge-/"
           >
             <img
               class="webscreenshot"
-              src="./assets/images/webopage screenshot.png"
+              src="./assets/images/webopage screenshot.png" alt="Landing page for Horiseon"
             />
           </a>
-          
-        </figure>
+         </figure>
         </div>
-        
-        <!-- floats the img left to form coloumn -->
+
         <div class="imgcolumn">
         <h3>Watch the Box!</h3>
         <!-- watch the box screenshot -->
         <figure>
           <a target="_blank" href="https://coffeeeyes28.github.io/watch-the-box/">
             <img class="boxscreenshot"
-            src="./assets/images/boxapp.png"/>
+            src="./assets/images/boxapp.png" alt="Two boxes one Orange with no changes applied, the other with atributes applied from the buttons that appear underneath the boxes; Grow,Blue,Fade,Border"/>
           </a>
         </div>
         </figure>
-        </div>
+      </div>
+
         <div class="imgrow">
           <div class="imgcolumn">
           <figure>
@@ -131,21 +127,22 @@
             <img class="wip" src="./assets/images/work-in.png"/>
           </figure>
         </div>
+
         <div class="imgcolumn">
           <figure>
             <h3>Coming Soon</h3>
-            <img class="wip" src="assets/images/work-in.png" />
+            <img class="wip" src="assets/images/work-in.png" alt="Work sign with a stick figure sitting at a desk on a computer; the text work in progress appears below them"/>
           </figure>
         </div>
 
-        
       </div>
       </section>
+
     </div>
     </div>
       <br>
      <!-- Contact Me section -->
-     <div class="row">
+    <div class="row">
      <section id="contact" class="contact">
       <h3>Contact Me:</h3>
       <ul>
@@ -159,14 +156,16 @@
           <a target="_blank" href="https://www.linkedin.com/in/gregory-johnston-sales/">LinkedIn</a>
         </li>
         <br/>
-      </ul>
+     </ul>
 
-    </section>
-  </div>
-    </main>
-    <!-- Footer -->
+     </section>
+    </div>
+ </main>
+
+    <!-- Footer Section-->
     <footer>
       <h4>&copy; 2022 ❤️</h4>
     </footer>
+
   </body>
 </html>

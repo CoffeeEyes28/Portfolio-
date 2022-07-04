@@ -1,3 +1,4 @@
+/* Color pallet for entire page */
 :root {
   --main: #262626;
   --secondary: #5f222b;
@@ -10,10 +11,11 @@ body {
   font-family: Fanwood, serif;
   color: var(--white);
 }
-
+/* apples flex to entire header including nav bar */
 .headerflex{
   display: flex;
   flex-flow: column wrap;
+  
   
 }
 
@@ -55,6 +57,7 @@ a {
   text-decoration: none;
 }
 
+/* creates a row for main section content*/
 .row{
   display: flex;
   flex-flow: row wrap;
@@ -62,6 +65,7 @@ a {
   
 }
 
+/* creates a column for main section content */
 .column{
   flex: 1;
 flex-flow: column wrap;
@@ -119,31 +123,36 @@ h2 {
   
 }
 
+/* creates row inside my work section for examples */
 .imgrow{
   display: flex;
   
 }
-
+/* creates coloumn inside my work section for examples */
 .imgcolumn{
   flex: 1;  
 }
 
+/* code refactor img */
 .webscreenshot {
   width: 510px;
   height: 580px;
 }
 
 
-
+/* watch the box img */
 .boxscreenshot{
   width: 600px;
   height: 410px;
 }
 
+/* coming soon img */
 .wip{
   width: 250px;
   height: 250px;
 }
+
+
 .contact {
   text-align: center;
   background-color: var(--third);
@@ -178,6 +187,7 @@ footer h4{
   font-size: 18px;
 }
 
+/* main section flex for display response/img scaling for my work examples */
 @media screen and (max-width:1983px){
   .column{
     display: flex; 
@@ -214,7 +224,7 @@ footer h4{
 }
 
 
-
+/* resets margin applied to the about me and work section */
 @media screen and (max-width:1572px){
 
   .about,
@@ -222,12 +232,15 @@ footer h4{
     margin: 0;
   }
 
+
 }
 
 
+  
 
 
-@media screen and (max-width:358px){
+/* img scaling for my work examples */
+@media screen and (max-width:380px){
 
 
   .webscreenshot,
@@ -251,3 +264,4 @@ footer h4{
       max-width: 100px;
     }
 }
+
